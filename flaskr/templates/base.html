@@ -22,12 +22,3 @@
     {% endfor %}
     {% block content %}{% endblock %}
 </section>
-
-<!-- 'g' is automatically available in templates. Based on if 'g.user' is set (from 'load_logged_in_user'), g is automatically available in templates. Based on if g.user is set (from load_logged_in_user), either the username and a log out link are displayed, or links to register and log in are displayed. url_for() is also automatically available, and is used to generate URLs to views instead of writing them out manually.
-After the page title, and before the content, the template loops over each message returned by get_flashed_messages(). You used flash() in the views to show error messages, and this is the code that will display them.
-There are three blocks defined here that will be overridden in the other templates:
-{% block title %} will change the title displayed in the browser’s tab and window title.
-{% block header %} is similar to title but will change the title displayed on the page.
-{% block content %} is where the content of each page goes, such as the login form or a blog post.
-The base template is directly in the templates directory. To keep the others organized, the templates for a blueprint will be placed in a directory with the same name as the blueprint -->
-
